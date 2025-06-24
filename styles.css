@@ -106,3 +106,24 @@ img:hover {
     border-radius: 8px;
     margin-top: 20px;
 }
+
+.Galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Galeria img {
+  width: calc(33.333% - 10px);
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.foto_de_perfil {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap
+}

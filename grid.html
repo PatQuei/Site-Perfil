@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+      .grid-conteiner {
+        max-width: 900px;
+        margin: 0 auto;
+        border: 2px solid #333;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        gap: 15px;
+      }
+
+      .grid-item {
+        padding: 20px;
+        background-color: #ccc;
+        border: 1px solid #e0e0e0;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      .header {
+        grid-area: header;
+        background-color: #a7a7a7;
+        color: white;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #f1cbff;
+        color: white;
+      }
+      .main {
+        grid-area: main;
+        background-color: #c1f0c1;
+        min-height: 200px;
+        color: white;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: #ffe0e0;
+        color: white;
+      }
+
+      @media (max-width: 720px) {
+        .footer {
+          background-color: red;
+        }
+        .grid-conteiner {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto auto;
+          grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-conteiner">
+      <header class="header">Cabeçalho</header>
+      <aside class="sidebar">Barra lateral</aside>
+      <main class="main">Conteúdo principal</main>
+      <footer class="footer">Rodapé</footer>
+    </div>
+  </body>
+</html>

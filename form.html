@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de contato</title>
+  </head>
+  
+  <link rel="shortcut icon" href="./Fotos/fc00aa3d-ecf9-47c9-8c47-703cc2940eae.svg" type="image/x-icon">
+  <body>
+    <h1>Formulário de contato</h1>
+    <form action="" method="get">
+      <label for="name">Nome completo:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">E-mail:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto" required></textarea><br /><br />
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="reclamacao">Reclamação</option>
+      </select>
+      <br /><br />
+      <label for="message">Mensagem:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea
+      ><br /><br />
+      <input type="checkbox" id="termos" name="termos" />
+      <label for="termos">Aceito os termos e condições.</label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
